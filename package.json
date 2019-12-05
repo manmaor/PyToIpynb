@@ -5,6 +5,7 @@
     "icon": "./logo/logo.png",
     "version": "1.0.0",
     "publisher": "maorbarak",
+    "repository": {"url": "https://github.com/manmaor/PyToIpynb"},
 	"engines": {
 		"vscode": "^1.40.0"
 	},
