@@ -2,7 +2,7 @@
 	"name": "pytoipynb",
 	"displayName": "PyToIpynb",
     "description": "save current python file as ipynb",
-    "icon": "./logo/logo.png",
+    "icon": "images/icon.png",
     "version": "1.0.0",
     "publisher": "maorbarak",
     "repository": {"url": "https://github.com/manmaor/PyToIpynb"},
