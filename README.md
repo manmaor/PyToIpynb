@@ -16,7 +16,7 @@ The python file needs to be with format:
 ```
 ## Usage
 
-On an open python file **cntl+shift+p** -> **Save to .ipynb**
+On an open python file **ctrl+shift+p** -> **Save to .ipynb**
 
 ### 1.0.0
 

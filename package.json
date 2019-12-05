@@ -4,7 +4,7 @@
     "description": "save current python file as ipynb",
     "icon": "images/icon.png",
     "version": "1.0.0",
-    "publisher": "maorbarak",
+    "publisher": "MaorBarak",
     "repository": {"url": "https://github.com/manmaor/PyToIpynb"},
 	"engines": {
 		"vscode": "^1.40.0"
