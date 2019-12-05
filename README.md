@@ -14,6 +14,9 @@ The python file needs to be with format:
 # To add a new cell, type '# %%'
 # To add a new markdown cell, type '# %% [markdown]'
 ```
+## Usage
+
+On an open python file **cntl+shift+p** -> **Save to .ipynb**
 
 ### 1.0.0
 

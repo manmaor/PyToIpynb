@@ -1,12 +1,14 @@
 {
 	"name": "pytoipynb",
 	"displayName": "PyToIpynb",
-	"description": "save current python file as ipynb",
-	"version": "1.0.0",
+    "description": "save current python file as ipynb",
+    "icon": "./logo/logo.png",
+    "version": "1.0.0",
+    "publisher": "maorbarak",
 	"engines": {
 		"vscode": "^1.40.0"
 	},
-	"categories": [
+	"categories": [ 
 		"Other"
 	],
 	"activationEvents": [
