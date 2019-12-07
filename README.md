@@ -22,4 +22,8 @@ On an open python file **ctrl+shift+p** -> **Save to .ipynb**
 
 Initial release :)
 
+### 1.0.1
+
+fix export markdown
+
 **Enjoy!**

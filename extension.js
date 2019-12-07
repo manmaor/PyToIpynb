@@ -29,7 +29,7 @@ function add_cells(output, cells) {
             clls.push({
                 "cell_type": "markdown",
                 "metadata": {},
-                "source": cell.replace(" [markdown]\n", '').trimRight()
+                "source": cell.replace(" [markdown]\n", '\n').split('\n#').join('\n').trimRight()
             });
         } else {
             clls.push({
