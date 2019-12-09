@@ -3,7 +3,7 @@
 	"displayName": "PyToIpynb",
     "description": "save current python file as ipynb",
     "icon": "images/icon.png",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "publisher": "MaorBarak",
     "repository": {"url": "https://github.com/manmaor/PyToIpynb"},
 	"engines": {

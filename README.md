@@ -19,10 +19,6 @@ The python file needs to be with format:
 
 On an open python file **ctrl+shift+p** -> **Save to .ipynb**
 
-### 1.0.0
-
-Initial release :)
-
 ### 1.0.1
 
 fix export markdown
@@ -38,5 +34,8 @@ in code:
 in markdoun: 
 * removing first line whitespace
 
+### 1.1.1
+
+add metadata
 
 **Enjoy!**

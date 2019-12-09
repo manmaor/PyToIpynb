@@ -11,14 +11,9 @@ function add_nb(output) {
 }
 
 function add_metadata(output) {
-    // let metadata = {
-    //     "language_info": {
-    //         "name": "python",
-    //         "version": "3.7.4",
-    //     }
-    // }
+    let metadata = { }
 
-    // output["metadata"] = metadata
+    output["metadata"] = metadata
 }
 
 function add_cells(output, cells) {
