@@ -23,19 +23,26 @@ function add_metadata(output) {
 
 function add_cells(output, cells) {
     let clls = [];
+    let execution_count = 0;
 
     cells.forEach(function (cell) {
-        if (cell.startsWith(' [markdown]\n')) {
+        let cellSource = cell.trim();
+        if (cellSource === "") {
+            
+        }
+        else if (cell.startsWith(' [markdown]\n') || cell.startsWith('# %% [markdown]\n')) {
             clls.push({
                 "cell_type": "markdown",
                 "metadata": {},
-                "source": cell.replace(" [markdown]\n", '\n').split('\n#').join('\n').trimRight()
+                "source": cell.replace("# %% [markdown]\n", '\n').replace(" [markdown]\n", '\n').split('\n# ').join('\n').trim()
             });
-        } else {
+        } else if (cell.startsWith('\n') || cell.startsWith('# %%\n')) {
             clls.push({
                 "cell_type": "code",
                 "metadata": {},
-                "source": cell.trimLeft().trimRight()
+                "source": cell.trimLeft().trimRight(),
+                "outputs":[],
+                "execution_count": ++execution_count
             });
         }
     })
