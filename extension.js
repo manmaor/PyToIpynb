@@ -21,17 +21,20 @@ function add_cells(output, cells) {
     let execution_count = 0;
 
     cells.forEach(function (cell) {
-        let cellSource = cell.trim();
-        if (cellSource === "") {
-            
-        }
-        else if (cell.startsWith(' [markdown]\n') || cell.startsWith('# %% [markdown]\n')) {
+        let cellTrimed = cell.trim();
+        let splitedCell = cell.split('\n')
+
+        if (cellTrimed === "") {    
+        } else if (splitedCell[0].trim() == "[markdown]") {
+            // removing the [markdown]
+            delete splitedCell[0]
+
             clls.push({
                 "cell_type": "markdown",
                 "metadata": {},
-                "source": cell.replace("# %% [markdown]\n", '\n').replace(" [markdown]\n", '\n').split('\n# ').join('\n').trim()
+                "source": splitedCell.join('\n').split('\n# ').join('\n').trim()
             });
-        } else if (cell.startsWith('\n') || cell.startsWith('# %%\n')) {
+        } else if (splitedCell[0].trim() == "") {
             clls.push({
                 "cell_type": "code",
                 "metadata": {},

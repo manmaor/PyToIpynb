@@ -19,9 +19,6 @@ The python file needs to be with format:
 
 On an open python file **ctrl+shift+p** -> **Save to .ipynb**
 
-### 1.0.1
-
-fix export markdown
 
 ### 1.1.0
 
@@ -37,5 +34,9 @@ in markdoun:
 ### 1.1.1
 
 add metadata
+
+### 1.1.2
+bug fix, spaces after '# %%' working.
+
 
 **Enjoy!**
